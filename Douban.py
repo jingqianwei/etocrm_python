@@ -131,7 +131,7 @@ class DoubanSpider(object):
                 # 获取数据库中的电影标题
                 titles.append(existed_movie.get('title'))
 
-            # 多维数组
+            # 多维数组, 因为结果可能返回一个多维数组
             if self.is_multi_list(movies):
                 for movie in movies:
                     if type(movie) == list:
