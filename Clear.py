@@ -73,8 +73,10 @@ class Clear(object):
         """
         if is_folder_file(self.path_root):  # 存在文件，整理
             self.collect()
+            print('整理成功')
         else:  # 不存在就后退
             self.extract()
+            print('回退成功')
 
 if __name__ == '__main__':
     clear = Clear('\\Users\chinwe.jing\Desktop\资料')
